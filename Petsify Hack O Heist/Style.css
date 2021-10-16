@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: bordor-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+p
+{
+    font-weight: 300;
+    color: #111 ;
+}
+body
+{
+    min-height: 1000px;
+
+}
+.banner
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/images/How-to-Start-an-Animal-Rescue-featured.png");
+    background-size: cover;
+    background-position: center;
+}
+.banner .Content
+{
+    max-width: 900px;
+    text-align: center;    
+}
+.banner .Content h2
+{
+    font-size: 2em;
+    color: rgb(3, 3, 3);
+}
+.banner .Content p
+{
+    font-size: 1em;
+    color: rgb(19, 15, 15);
+}
+header
+{
+    position: fixed;
+    background: #4a4b49;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 5px 80px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header .sticky
+{
+    padding: 5px 100px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 20px rgba(0,0,0,0,0.05);
+}
+header .logo
+{
+    color: #B3F2DD;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .sticky .logo
+{
+   color: #111; 
+}
+header .Navigation
+{
+    position: relative;
+    display: flex;
+}
+header .Navigation li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+header .Navigation li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+header .sticky .Navigation li a
+{
+    color: #111;
+}
+header .Navigation li a :hover
+{
+    color: #01ffaa;
+}
+#adoptds
+{
+    width: 3em;
+    border-radius: 50%;
+}
+#ads
+{
+    background-color: #e08d79;
+    display:flex;
+}
+
+.btn
+{
+    font-size: 1em;
+    color: #fff;
+    background: #A882DD;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    Letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover
+{
+    letter-spacing: 6px ;
+}
+
+.row .col50 .imgBx
+{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+}
+.row .col50 .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.row
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50
+{
+    position: relative;
+    width: 100%;
+}
+.titletext
+{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+    
+}
+.blog
+{
+    
+    background-image: radial-gradient(rgb(23, 119, 55), rgb(85, 196, 112));
+    
+}
+.white .titleText,
+.white p
+{
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 2em;
+}
+.blog .content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.blog .content .box
+{
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.blog .content .box .imgBx
+{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.blog .content .box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+.blog .content .box .text
+{
+    text-align: center;
+}
+.blog .content .box .text p
+{
+    
+    color: #666;
+    font-style: italic;
+}
+.blog .content .box .text h3
+{
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    color: #ff0157;
+    font-weight: 600;
+}
+.contact
+{
+    background: url("/images/Contact-Us-Background.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    align-content: center;
+}
+.ContactForm
+{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin-top: 50px;
+    align-content: center;
+}
+.ContactForm h3
+{
+    color: rgb(12, 1, 1);
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;    
+}
+.ContactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.ContactForm .inputBox input,
+.ContactForm .inputBox textarea
+{
+    width: 100%;
+    border: 1px solid rgb(7, 7, 7);
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+.ContactForm .inputBox input[type="submit"]
+{
+    font-size: 1em;
+    color: #fff;
+    background: #46a867;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    align-content: center;
+}
+section.banner
+{
+    background-color: #46a867;
+}
+section.aboutus
+{
+    background-color: #46a867;
+    padding-left: 20px;
+}
+.aboutus .titleText{
+text-decoration: underline;
+}
+section.donate
+{
+    background-color: #46a867;
+}
+section.catcare{
+    background-color: #A882DD;
+}
+#hug
+{
+    margin: 2em;
+    background-color: #A882DD;
+    padding-top: 1em;
+}
+
+#hug img{
+    width:77%;
+    align-items: center;
+}
+
+#adoptbody
+{
+    background-color: cornsilk;
+}
+
+.donate .do .dot .titles 
+{
+  text-align: center;
+}
+.donate .do .dot .titles .p
+{
+  text-align: center;
+}
+
+
+.QRCode
+{
+    
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12%;
+}
+
+.title
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.catcare .content
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.catcare .content .box
+{
+    width: 340px;
+    margin: 20px;
+    border: 8px solid rgb(252, 240, 240);
+    box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+}
+.catcare .content .box .imgBx
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.catcare .content .box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.catcare .content .box .text
+{
+    padding: 15px 0 5px;
+}
+.catcare .content .box .text h3
+{
+    text-align: center;
+    
+    font-weight: 600;
+    color: #111;
+}
+.title .btn
+{
+    font-size: 1em;
+    color: #fff;
+    background: #00ff55;
+    display: inline-block;
+    padding: 10px 50px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    Letter-spacing: 2px;
+    transition: 0.5s;
+}
+.title .btn:hover
+{
+    letter-spacing: 6px ;
+}
+
+.catcare .content .box .button
+{
+    font-size: 1em;
+    color: #fff;
+    background: #00ff55;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    Letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.title
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.catcare .content
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.catcare .content .box
+{
+    width: 320px;
+    margin: 20px;
+    border: 8px solid rgb(252, 240, 240);
+    box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+}
+.catcare .content .box .imgBx
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.catcare .content .box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.catcare .content .box .text
+{
+    padding: 15px 0 5px;
+}
+.catcare .content .box .text h3
+{
+    text-align: center;
+    
+    font-weight: 600;
+    color: #111;
+}
+.title .btn
+{
+    font-size: 1em;
+    color: #fff;
+    background: #00ff55;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    Letter-spacing: 2px;
+    transition: 0.5s;
+}
+.title .btn:hover
+{
+    letter-spacing: 6px ;
+}
+
+.catcare .content .box .button
+{
+    font-size: 1em;
+    color: #fff;
+    background: #00ff55;
+    display: inline-block;
+    padding: 10px 108.1px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    Letter-spacing: 2px;
+    transition: 0.5s;
+}
+.suppliesbdy
+{
+    background-color: #A882DD;
+    
+}
+
