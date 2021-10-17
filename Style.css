@@ -1,0 +1,1305 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: bordor-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-weight: 300;
+    color: #111;
+}
+
+body {
+    min-height: 1000px;
+}
+
+.banner {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: url("/images/How-to-Start-an-Animal-Rescue-featured.png");*/
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .Content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .Content h2 {
+    font-size: 2em;
+    color: rgb(3, 3, 3);
+}
+
+.banner .Content p {
+    font-size: 1em;
+    color: rgb(19, 15, 15);
+}
+
+
+/* Navbar container */
+
+.navbar {
+    /*overflow: hidden;*/
+    /*background-color: #333;*/
+    font-family: Arial;
+}
+
+/* Links inside the navbar */
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgb(247, 242, 242);
+    text-align: center;
+    padding-left: 12px;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+
+.dropdown .dropbtn {
+    font-size: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    /*padding: 5px 5px;*/
+    background-color: inherit;
+    /*font-family: inherit; /* Important for vertical align on mobile phones */
+    /*margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* Dropdown content (hidden by default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3a3838;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    float: none;
+    color: rgb(3, 3, 3);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: rgb(117, 114, 114);
+}
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header {
+    position: fixed;
+    background: #4a4b49;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 80px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header .sticky {
+    padding: 5px 100px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0, 0.05);
+}
+
+header .logo {
+    color: #B3F2DD;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header .sticky .logo {
+    color: #111;
+}
+
+header .Navigation {
+    position: relative;
+    display: flex;
+}
+
+header .Navigation li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .Navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+header .sticky .Navigation li a {
+    color: #fff;
+}
+
+header .Navigation li a :hover {
+    color: #01ffaa;
+    padding: 10px;
+}
+
+#adopt h2{
+    padding-top: 20px;
+}
+
+#adoptds {
+    width: 5em;
+    border-radius: 50%;
+    margin: 25px;
+    float: left;
+}
+
+#ads {
+    background-color: #e08d79;
+    display: flex;
+    margin-top: 3em;
+}
+
+.btn {
+    font-size: 1em;
+    color: #fff;
+    background: #A882DD;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    Letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    letter-spacing: 6px;
+}
+
+.row .col50 .imgBx {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+}
+
+.row .col50 .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50 {
+    position: relative;
+    width: 100%;
+}
+
+.titletext {
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.blog {
+    background-image: radial-gradient(rgb(23, 119, 55), rgb(85, 196, 112));
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.container .card {
+    position: relative;
+    width: 300px;
+    height: 225px;
+    background: linear-gradient(#fff, #97dfaf);
+    margin: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.container .card .Content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.container .card:hover .Content {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.container .card .Content .imgBx {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.25);
+}
+
+.container .card .Content .imgBx img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .Content .text {
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.white .titleText, .white p {
+    text-align: center;
+    color: rgb(97, 146, 42);
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.blog .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.blog .content .box {
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blog .content .box .imgBx {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.blog .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog .content .box .text {
+    text-align: center;
+}
+
+.blog .content .box .text p {
+    color: rgb(14, 13, 13);
+    font-style: italic;
+}
+
+.blog .content .box .text h3 {
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    color: purple;
+    font-weight: 600;
+}
+
+.contact {
+    /*background: url("/images/Contact-Us-Background.png");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-content: center;
+}
+
+.ContactForm {
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 50px;
+    align-content: center;
+}
+
+.ContactForm h3 {
+    color: rgb(12, 1, 1);
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.ContactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.ContactForm .inputBox input, .ContactForm .inputBox textarea {
+    width: 100%;
+    border: 1px solid rgb(7, 7, 7);
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.ContactForm .inputBox input[type="submit"] {
+    font-size: 1em;
+    color: #fff;
+    background: #46a867;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    align-content: center;
+}
+
+section.banner {
+    background-color: #46a867;
+}
+
+section.aboutus {
+    /*background-image: url('/images/istockphoto-1296353202-170667a.jpg');*/
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutus .titleText {
+    text-decoration: underline;
+}
+
+section.donate {
+    background-color: #97dfaf;
+}
+/*
+section.catcare {
+    background-color: #A882DD;
+}
+*/
+
+#hug {
+    margin: 2em;
+    padding-top: 1em;
+}
+
+#adoptbody {
+    margin-top: 20px;
+    background-color: #A3CEF1;
+}
+
+.donate .do .dot .titles {
+    text-align: center;
+}
+
+.donate .do .dot .titles .p {
+    text-align: center;
+}
+
+.QRCode {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12%;
+    margin-bottom: 20px;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.catcare .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.catcare .content .box {
+    width: 340px;
+    margin: 20px;
+    border: 8px solid rgb(252, 240, 240);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.catcare .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.catcare .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.catcare .content .box .text {
+    padding: 15px 0 5px;
+}
+
+.catcare .content .box .text h3 {
+    text-align: center;
+    font-weight: 600;
+    color: #111;
+}
+
+.title .btn {
+    font-size: 1em;
+    color: #fff;
+    background: #00ff55;
+    display: inline-block;
+    padding: 10px 50px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    Letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.title .btn:hover {
+    letter-spacing: 6px;
+}
+
+.catcare .content .box .button {
+    font-size: 1em;
+    color: #fff;
+    background: #00ff55;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    Letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.catcare .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.catcare .content .box {
+    width: 320px;
+    margin: 20px;
+    border: 8px solid rgb(252, 240, 240);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.catcare .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.catcare .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.catcare .content .box .text {
+    padding: 15px 0 5px;
+}
+
+.catcare .content .box .text h3 {
+    text-align: center;
+    font-weight: 600;
+    color: #111;
+}
+
+.title .btn {
+    font-size: 1em;
+    color: #fff;
+    background: #00ff55;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    Letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.title .btn:hover {
+    letter-spacing: 6px;
+}
+
+.catcare .content .box .button {
+    font-size: 1em;
+    color: #fff;
+    background: #00ff55;
+    display: inline-block;
+    padding: 10px 108.1px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    Letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.suppliesbdy {
+    background-color: #A882DD;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+/* Blog post design starts from here */
+
+.card {
+    overflow: hidden;
+    box-shadow: 0px 2px 20px #d7dfe2;
+    /* Card outline shadow */
+    background: white;
+    /* post background color */
+    border-radius: 0.5rem;
+    position: relative;
+    width: 350px;
+    /* post card width */
+    margin: 1rem;
+    transition: 250ms all ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    /* blog post hover */
+    transform: scale(1.05);
+    box-shadow: 0px 2px 40px #d7dfe2;
+}
+
+/*Design banner image*/
+
+.banner-img {
+    position: absolute;
+    object-fit: cover;
+    height: 14rem;
+    /* image height */
+    width: 100%;
+}
+
+/* Design catagory text */
+
+.category-tag {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgb(10, 10, 10);
+    /* text color */
+    background: red;
+    /* text background color */
+    padding: 0.5rem 1.3rem 0.5rem 1rem;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    border-radius: 0 2rem 2rem 0;
+}
+
+/* 1st catagory text background color */
+
+.popular {
+    background: #ef257a;
+}
+
+/* 2st catagory text background color */
+
+.technology {
+    background: #651fff;
+}
+
+/* 3st catagory text background color */
+
+.psychology {
+    background: #e85808;
+}
+
+/* Design of # tags, heading, description starts from here */
+
+.card-body {
+    margin: 15rem 1rem 1rem 1rem;
+}
+
+/* #tags design */
+
+.blog-hashtag {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #4d97b2;
+}
+
+/* heading design */
+
+.blog-title {
+    line-height: 1.5rem;
+    margin: 1rem 0 0.5rem;
+}
+
+/* description design */
+
+.blog-description {
+    color: #616b74;
+    font-size: 0.9rem;
+}
+
+/*Design of profile image, name, followers starts from here*/
+
+.card-profile {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+/* Profile image */
+
+.profile-img {
+    width: 60px;
+    /* image width */
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card-profile-info {
+    margin-left: 1rem;
+}
+
+/* profile name */
+
+.profile-name {
+    font-size: 1rem;
+}
+
+/*Profile followers */
+
+.profile-followers {
+    color: #616b74;
+    font-size: 0.9rem;
+}
+
+/*emergency background image*/
+
+.emergency {
+    background-color: tomato;
+    align-content: center;
+}
+
+#indies {
+    background-color: #FFFD82;
+    width: 90%;
+    margin-left: 10px;
+    padding-left: 10px;
+    border:3px solid rgb(104, 86, 28);
+    border-style:ridge;
+}
+
+.indies {
+    display: flex;
+}
+.indies img{
+    border:1px solid black;
+}
+
+.fosterhomes {
+    background-image: radial-gradient(rgb(23, 119, 55), rgb(85, 196, 112));
+    margin: 10px;
+    padding: 10px;
+}
+
+.white .titleText, .white p {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.fosterhomes .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.fosterhomes .content .box {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fosterhomes .content .box .imgBx {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.fosterhomes .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.fosterhomes .content .box .text {
+    text-align: center;
+}
+
+.fosterhomes .content .box .text p {
+    color: #666;
+    font-style: italic;
+}
+
+.fosterhomes .content .box .text h3 {
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    color: #ff0157;
+    font-weight: 600;
+}
+
+.fosterhomes .content .box .button {
+    font-size: 1em;
+    color: #fff;
+    background: #00ff55;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    Letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #0c0b0b23;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    margin-top: 0.5em;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: #000;
+}
+
+.flip-card-back {
+    background-color: #e08d79;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+#h2 {
+    margin-top: 2em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*here*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-wrap {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-in {
+    padding: 40px 30px;
+}
+
+.contact-in:nth-child(1) {
+    flex: 30%;
+    background: url(../images/1.jpg);
+    color: rgb(0, 0, 0);
+}
+
+.contact-in:nth-child(2) {
+    flex: 45%;
+    background: rgba(7, 0, 1, 0)
+}
+
+.contact-in:nth-child(3) {
+    flex: 25%;
+    padding: 0;
+}
+
+.contact-in h1 {
+    font-size: 24px;
+    color: rgb(5, 5, 5);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contact-in h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.contact-in h2 i {
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background: #070707;
+    color: rgb(247, 242, 242);
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.contact-in p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contact-in ul {
+    padding: 0;
+    margin: 0;
+}
+
+.contact-in ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.contact-in ul li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #B3F2DD;
+    border-radius: 50px;
+}
+
+.contact-in ul li a i {
+    font-size: 14px;
+    line-height: 30px;
+    color: #000;
+}
+
+.contact-in form {
+    width: 100%;
+    height: auto;
+}
+
+.contact-in-input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(3, 0, 0);
+    outline: none;
+    padding-left: 5px;
+    background: rgba(255, 255, 255, 0.37);
+    color: rgb(5, 5, 5);
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-in-input::placeholder {
+    color: rgb(15, 1, 1);
+}
+
+.contact-in-textarea {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(10, 1, 1);
+    outline: none;
+    padding-top: 5px;
+    padding-left: 5px;
+    background: rgba(255, 255, 255, 0.37);
+    color: rgb(3, 3, 3);
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-in-textarea::placeholder {
+    color: rgb(7, 0, 0);
+}
+
+.contact-in-btn {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgb(8, 0, 0);
+    outline: none;
+    background: #4dda7c;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.contact-in iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#index{
+    margin-top: 100px;
+}
+
+@media only screen and (max-width:480px) {
+    .contact-in:nth-child(1) {
+        flex: 50%;
+    }
+    .contact-in:nth-child(2) {
+        flex: 50%;
+    }
+    .contact-in:nth-child(3) {
+        flex: 100%;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .contact-in:nth-child(1) {
+        flex: 50%;
+    }
+    .contact-in:nth-child(2) {
+        flex: 50%;
+    }
+    .contact-in:nth-child(3) {
+        flex: 100%;
+    }
+}
+
+.postadopt {
+    margin-top: 5em;
+}
+
+footer {
+    background-color: powderblue;
+}
+
+footer div {
+    text-align: center;
+}
+
+footer .smalltext {
+    font-size: small;
+}
+
+.adoptimgs {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 33.333333%;
+}
+
+
+.vet {
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+    50% {
+        background-position: 100% 19%
+    }
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-moz-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+    50% {
+        background-position: 100% 19%
+    }
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-o-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+    50% {
+        background-position: 100% 19%
+    }
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+    50% {
+        background-position: 100% 19%
+    }
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+
+.box10 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/images/dogfur.jpg");
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+}
+.box20 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/images/catfur.jpg");
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+}
+.box30 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/images/birdfeathers.jpg");
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+}
+.box40 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/images/fishskin.jpg");
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+}
+.box50 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/images/How-to-Start-an-Animal-Rescue-featured.png");
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+}
+.box60 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/images/rainbow.jpg");
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+}
+
+.h3 {
+    font-family: sans-serif;
+    font-size: 48px;
+    color: #ffffff;
+    margin: 0px;
+    text-align: center;
+    display: table-cell;
+}
+.h2 {
+    font-family: sans-serif;
+    font-size: 48px;
+    color: #ffffff;
+    margin: 0px;
+    text-align: center;
+    display: table-cell;
+}
+.h1 {
+    font-family: sans-serif;
+    font-size: 48px;
+    color: #ffffff;
+    margin: 0px;
+    text-align: center;
+    display: table-cell;
+}
+#getmiddle{
+    margin-top:300px;
+    margin-left:250px;
+}
+
+#dogcare{
+    margin-top:100px;
+}
